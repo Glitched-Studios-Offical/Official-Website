@@ -1,0 +1,185 @@
+// Pride Flag Colors
+$red: #f25774;
+$orange: #ffb65b;
+$yellow: #fdda74;
+$green: #4cbe5d;
+$blue: #4080ff;
+$purple: #7b64c0;
+// Non-Binary Flag Colors
+$nb-yellow: #fff999;
+$nb-white: #ffffff;
+$nb-purple: #dbabff;
+$nb-black: #6e6e6e;
+// Trans Flag Colors
+$trans-blue: #addeff;
+$trans-white: #fcfcfc;
+$trans-pink: #fface0;
+
+$flag-width: 320px;
+$flag-height: 180px;
+
+@mixin animate-slide($delay) {
+  animation-name: slide;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-delay: $delay;
+}
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #131313;
+  color: black; /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 125%;
+  z-index: 9999; 
+  opacity: 1; /* Ensure the loader is above all other content */
+  transition: opacity 0.5s ease;
+}
+
+.flag {
+  width: $flag-width;
+  height: $flag-height;
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+
+  div {
+    width: 0;
+  }
+
+  .red {
+    background: $red;
+    @include animate-slide(0s);
+  }
+
+  .orange {
+    background: $orange;
+    @include animate-slide(0.1s);
+  }
+
+  .yellow {
+    background: $yellow;
+    @include animate-slide(0.2s);
+  }
+
+  .green {
+    background: $green;
+    @include animate-slide(0.3s);
+  }
+
+  .blue {
+    background: $blue;
+    @include animate-slide(0.4s);
+  }
+
+  .purple {
+    background: $purple;
+    @include animate-slide(0.5s);
+  }
+
+  .loader-text {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+}
+
+.nb-flag {
+    width: $flag-width;
+    height: $flag-height;
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+
+    div {
+      width: 0;
+    }
+
+  .nb-yellow {
+    background: $nb-yellow;
+    @include animate-slide(0s);
+  }
+
+  .nb-white {
+    background: $nb-white;
+    @include animate-slide(0.1s);
+  }
+
+  .nb-purple {
+    background: $nb-purple;
+    @include animate-slide(0.2s);
+  }
+
+  .nb-black {
+    background: $nb-black;
+    @include animate-slide(0.3s);
+  }
+}
+
+.trans-flag {
+  width: $flag-width;
+  height: $flag-height;
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+
+  div {
+    width: 0;
+  }
+
+.trans-blue {
+  background: $trans-blue;
+  @include animate-slide(0s);
+}
+
+.trans-pink {
+  background: $trans-pink;
+  @include animate-slide(0.1s);
+}
+
+.trans-white {
+  background: $trans-white;
+  @include animate-slide(0.2s);
+}
+
+.trans-pink2 {
+  background: $trans-pink;
+  @include animate-slide(0.3s);
+}
+
+.trans-blue2 {
+  background: $trans-blue;
+  @include animate-slide(0.4s);
+}
+
+}
+
+.loader-text {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  white-space: nowrap; /* This prevents text from wrapping */
+  margin-left: 45px; /* Adjust this value to control the spacing between colored items and text */
+  margin-top: 20px;
+}
+
+@keyframes slide {
+  10% {
+    width: 0;
+    justify-self: start;
+  }
+  37% {
+    width: 100%;
+    justify-self: start;
+  }
+  63% {
+    width: 100%;
+    justify-self: end;
+  }
+  90% {
+    width: 0;
+    justify-self: end;
+  }
+}
