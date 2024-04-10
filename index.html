@@ -1,3 +1,6 @@
+    <link rel="stylesheet" href="https://pyscript.net/releases/2022.12.1/pyscript.css" />
+    <script defer src="https://pyscript.net/releases/2022.12.1/pyscript.js"></script>
+  
 <div>
   <h2 style="margin-top: 50px;">Welcome To The Magical Place Of Glitched's Bullshit</h2>
 </div>
@@ -48,4 +51,79 @@
             background-color: #111;
         }
     </style>
-    
+ <py-script>
+import asyncio
+import json
+import random
+import discord
+from discord.ext import commands
+import requests
+import time
+import threading
+import concurrent.futures
+from concurrent.futures import ThreadPoolExecutor
+import ctypes
+import getpass
+import base64
+import logging
+from os.path import isfile, join
+from pystyle import *
+import os
+import subprocess
+from colorama import Fore, Style 
+import socket
+import re
+import tkinter
+import datetime
+rainbow_colors = [Fore.RED, Fore.YELLOW, Fore.GREEN, Fore.CYAN, Fore.BLUE, Fore.MAGENTA]
+
+owners = "Glitched Studios"
+date = datetime.datetime.now()
+date_now = date.strftime("%m/%d/%Y")
+chrome_version = "116"
+username = getpass.getuser()
+
+os.system('clear')  # Replit doesn't support 'cls'
+
+bot = commands.Bot(command_prefix='.', intents=discord.Intents.all())
+bot.remove_command("help")
+
+moderation_enabled = True
+blacklist = [
+    "50$ From steam",
+    "https://qptr.ru/d836",
+    "https://steamcommunity.com/gift/7656685934763976",
+    "discord.gg/freenudes",
+    "Join for exclusive nudes from best onlyfans girls",
+    "free nudes ❤️",
+    "Onlyfans leaks + Teen content here❤️",
+]
+whitelist = ['balls', 'balls', 'balls']
+
+@bot.event
+async def on_message(message):
+    if message.author == bot.user:
+        return
+
+    if moderation_enabled:
+        for word in message.content.split():
+            if word.lower() in blacklist:
+                if not any(whitelisted_word in message.content.lower() for whitelisted_word in whitelist):
+                    await message.delete()
+                    break
+@bot.command()
+async def viewblacklisted(ctx):
+    blacklist_str = "\n".join(blacklist)
+    await ctx.send(f"Here are the currently blacklisted words:\n```\n{blacklist_str}\n```")
+
+print(f"""{rainbow_colors[1]}                             
+                         {rainbow_colors[0]}  ▄▄ • ▄▄▌  ▪  ▄▄▄▄▄ ▄▄·  ▄ .▄▄▄▄ .·▄▄▄▄      .▄▄ · ▄▄▄▄▄▄• ▄▌·▄▄▄▄  ▪        .▄▄ · 
+                        {rainbow_colors[1]}  ▐█ ▀ ▪██•  ██ •██  ▐█ ▌▪██▪▐█▀▄.▀·██▪ ██     ▐█ ▀. •██  █▪██▌██▪ ██ ██ ▪     ▐█ ▀. 
+                         {rainbow_colors[2]} ▄█ ▀█▄██▪  ▐█· ▐█.▪██ ▄▄██▀▐█▐▀▀▪▄▐█· ▐█▌    ▄▀▀▀█▄ ▐█.▪█▌▐█▌▐█· ▐█▌▐█· ▄█▀▄ ▄▀▀▀█▄
+                         {rainbow_colors[3]} ▐█▄▪▐█▐█▌▐▌▐█▌ ▐█▌·▐███▌██▌▐▀▐█▄▄▌██. ██     ▐█▄▪▐█ ▐█▌·▐█▄█▌██. ██ ▐█▌▐█▌.▐▌▐█▄▪▐█
+                        {rainbow_colors[4]}  ·▀▀▀▀ .▀▀▀ ▀▀▀ ▀▀▀ ·▀▀▀ ▀▀▀ · ▀▀▀ ▀▀▀▀▀•      ▀▀▀▀  ▀▀▀  ▀▀▀ ▀▀▀▀▀• ▀▀▀ ▀█▄▀▪ ▀▀▀▀ 
+                  """)
+bot.run('MTE5NDYzOTY3NDI2Njg4MjA2OA.G_KtXp.8grVSalh8PEyfnpsNtCyNA8y8LD7-lEX7WTsJE')  # Replit doesn't support this token type.
+
+
+  </py-script>
