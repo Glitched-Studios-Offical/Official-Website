@@ -7,6 +7,68 @@
 </navul>
 <script src="unblockedscript.js"></script>
 <link rel="stylesheet" href="pride-loader.scss">
+<div class="RayanPiracy">
+    <br>
+    <h1 style="color: white;">Welcome to Glitched Studios Unblocked Games</h1>
+    <div class="instructions">
+        <p>Click on the game name below to download the game:</p>
+    </div>
+
+    <div class="game-links">
+    <div class="search-container">
+        <input type="text" id="game-search" placeholder="Search games">
+    </div>
+        <ul>
+          <ul>
+            <li><a href='https://gofile.io/d/p3jNHh' download>Blade And Sorcey</a></li>
+          </ul>
+        </ul>
+      <!-- Keep Links Above These comments-->
+       <!-- Gamelink Template below -->
+  <!--  <li><a href='' download>Game Name</a></li> -->
+
+          </ul>
+          <p id="no-matching-games" style="display: none;">No games available. Please try and request it.</p>
+              </div>
+
+              <h1>Massive credits to VRPirates for making this possible! <br> Without them, no one would be able to play pirated VR games</h1>
+                <h2>Thanks To Rayan For YOU know coding this :3 ( I stole the code ) </h2>
+          </div>
+
+          <script>
+              $(document).ready(function () {
+                  // Function to update the displayed games based on the search input
+                  function updateGameList(searchTerm) {
+                      var gameLinks = $(".game-links ul li a");
+                      var noMatchingGames = true;
+
+                      gameLinks.each(function () {
+                          var gameTitle = $(this).text().toLowerCase();
+                          if (gameTitle.includes(searchTerm)) {
+                              $(this).parent().show(); // Show the <li> element
+                              noMatchingGames = false;
+                          } else {
+                              $(this).parent().hide(); // Hide the <li> element
+                          }
+                      });
+
+                      if (noMatchingGames) {
+                          $("#no-matching-games").show();
+                      } else {
+                          $("#no-matching-games").hide();
+                      }
+                  }
+
+                  // Initial update to display all games
+                  updateGameList('');
+
+                  // Listen for input changes in the search field
+                  $("#game-search").on("input", function () {
+                      var searchTerm = $(this).val().toLowerCase();
+                      updateGameList(searchTerm);
+                  });
+              });
+          </script>
 <style>
   .RayanPiracy {
     display: grid;
