@@ -1,4 +1,4 @@
-## This Is Glitched Studios Source Code
+## This Is Glitched Studios Website Source Code
 
 > [Main Website](https://glitched-sudios-offical-website.vercel.app/)
 > <br>
