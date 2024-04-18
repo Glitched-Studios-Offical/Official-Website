@@ -3,7 +3,26 @@
 <div>
   <h2 style="margin-top: 50px;">Welcome To The Magical Place Of Glitched's Bullshit</h2>
 </div>
+<script type="text/javascript">
+  function redirectIfNecessary() {
+    // List of URLs that require redirection
+    var redirectionUrls = ["http://example.com"];
+    
+    // Get the current URL
+    var currentUrl = window.location.href;
 
+    // Check if the current URL is in the list of URLs that require redirection
+    if (redirectionUrls.includes(currentUrl)) {
+      // Redirect to the new website
+      window.location.replace("http://newwebsite.com");
+    }
+  }
+
+  // Call the function when the page loads
+  window.onload = function() {
+    redirectIfNecessary();
+  };
+</script>
 <ul>
   <li><a href="customnametag.html" style="font-size: 14px;">Custom Nametag</a></li>
   <li><a href="FreeVrGames/freevrgames.html">Free Vr Games</a></li>  <li><a href="Unblxcded WeBites/UnblxckedWebsites.html">Unblocked Website ( Comming soon )</a></li>
