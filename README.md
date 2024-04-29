@@ -2,7 +2,7 @@
 
 - [Info](#Info)
 - [How To Host](#HowTo)
-
+- [Update Logs](#update)
 <a id="Info"></a>
 ## Info
 ### **This Is Glitched Studios Website Source Code**
@@ -29,8 +29,19 @@
 1) Fork the code
 2) Then Go To [Vercel](https://vercel.app/)
 3) Then Sign In/Sign Up
-4) Then Press Add New
-5) Then Press Project
-6) Then Look For Official-Website
-7) Then Click Import
-8) Then Click Deploy
+5) Then Press Add New
+6) Then Press Project
+7) Then Look For Official-Website
+8) Then Click Import
+9) Then Click Deploy
+
+<a id="update"></a>
+## Update Log
+### Version 1.1 aka beginging Of Update Log
+```diff
+Added
++ Made the ReadMe.MD Better
++ Better Nav
+Removed
+- Removed Old Nav
+```
