@@ -31,7 +31,7 @@
 3) Then Sign In/Sign Up
 5) Then Press Add New
 6) Then Press Project
-7) Then Look For Official-Website
+7) Then Look For Official-Website or the name you change it to
 8) Then Click Import
 9) Then Click Deploy
 
