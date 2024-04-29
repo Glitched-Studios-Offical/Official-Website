@@ -7,9 +7,9 @@
 > If U Use Any Of The Code On This Website Please Give Credits To Glitched Studios And Give the discord Link Please And Thank You
 ## People Who Work On Website
 
-### Free Vr Games Team
-> SnakeVr
+### The Team
+> SnakeVr ( Free Vr Games )
 > <br> 
-> Glitched Da Cat
+> Glitched Da Cat ( Main Dev and Free VR Games )
 > <br>
-> Andrew
+> Andrew ( Free Vr Games )
