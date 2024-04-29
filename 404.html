@@ -1,9 +1,58 @@
-<style>
- p {
-  font-size: 34px;
- }
-</style>
 
-<p>File Not Found Error 404</p>
-<br>
-<p>This Page Ethier Doesn't Exist Or Was Moved Please Return to <a href="/index.html">Home Page</a></p>
+<html>
+<head>
+    <title>Error 404 - Page Not Found</title>
+    <style type="text/css">
+      
+        body {
+            padding-top: 10%;
+            padding-left: 10%;
+            padding-right: 10%;
+            font-family: 'Open Sans';
+        }
+
+        .ui-btn-general-primary {
+            font-family: 'Open Sans' !important;
+            max-width: none !important;
+        }
+
+        .error-404-page-image {
+            font-size: 160px;
+            line-height: 10px;
+            color: #CDCDCD;
+        }
+
+        .error-404-page-title {
+            font-size: 50px;
+            line-height: 60px;
+            color: #666666;   
+            font-family : 'Open Sans Bold'
+        }
+
+        .error-404-default-page-message {
+            font-size: 25px;
+            line-height: 30px;
+        }
+
+        .error-404-default-page-message-small {
+            font-size: 18.5px;
+            line-height: 25px;
+            color: #777474;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src ="" width="330" height="140" alt="Error 404" />
+        <div>
+            
+            <h1 class="error-404-page-title">You've found a page that doesn't exist.</h1>
+            
+            <p class="error-404-default-page-message">What you are looking for may have been moved or no longer exists. Please click on the button below to be redirected to the Home Page </p>
+            
+
+            <a onclick="window.open('/index.html','_self');" class="ui-btn-general-primary" title="Go to homepage."><span>Go To Home Page</span></a>
+        </div>
+    </div>
+</body>
+</html>
