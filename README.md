@@ -45,3 +45,8 @@ Added
 Removed
 - Removed Old Nav
 ```
+### Version 1.2 
+```diff
+Added 
++ Revamped Free Vr Games
+```
