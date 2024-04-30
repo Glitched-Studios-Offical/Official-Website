@@ -3,6 +3,168 @@ html,
 p{
 color: white;
 }
+.RayanPiracy {
+		display: grid;
+		place-items: center;
+		height: 100vh;
+		gap: 20px; /* Adjust gap between elements as needed */
+		grid-template-rows: auto auto; /* Adjust rows as needed */
+	align-items: center;
+
+}
+
+.instructions {
+		background-color: #333; 
+		color: #fff; 
+		padding: 10px; 
+		border-radius: 5px;
+		margin-bottom: 20px; 
+		width: 300px; 
+		animation: boxShadowRotate 5s linear 0s infinite, borderRotate 5s linear 0s infinite;
+		align-items: center;
+}
+
+.game-links {
+		background-color: #333; 
+		color: #fff; 
+		padding: 10px; 
+		border-radius: 5px;
+		width: 300px;
+		text-align: left;
+		animation: boxShadowRotate 5s linear 0s infinite, borderRotate 5s linear 0s infinite;
+}
+
+.game-links a {
+		display: block;
+		margin-bottom: 10px;
+		color: #fff;
+		text-decoration: none;
+}
+.game-links a:hover {
+		background-color: #222;
+}
+
+/* Style for the Request button and Admin button container */
+.button-container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		top: 20px; /* Distance from the top */
+		right: 20px; /* Distance from the right */
+		padding-top: 20px;
+}
+
+.request-button, .admin-button {
+		background-color: black; /* Button background color */
+		color: white; /* Button text color */
+		padding: 10px 20px; /* Button padding */
+		border: none; /* Remove button border */
+		border-radius: 5px; /* Rounded corners */
+		text-decoration: none; /* Remove underlines from the link */
+		font-weight: bold; /* Bold text */
+		margin-right: 5px; /* Adjust the spacing between buttons as needed */
+	animation: boxShadowRotate 5s linear 0s infinite, borderRotate 5s linear 0s infinite;
+
+}
+/* Style for the Discord button */
+.discord-button {
+		background-color: black;
+		color: white; /* Button text color */
+		padding: 10px 20px; /* Button padding */
+		border: none; /* Remove button border */
+		border-radius: 5px; /* Rounded corners */
+		text-decoration: none; /* Remove underlines from the link */
+		font-weight: bold; /* Bold text */
+		margin-right: 5px; /* Adjust the spacing between buttons as needed */
+	animation: boxShadowRotate 5s linear 0s infinite, borderRotate 5s linear 0s infinite;
+
+}
+
+/* Hover effect for the Discord button */
+.discord-button:hover {
+		background-color: #677BC4; /* Darker background on hover */
+	animation: boxShadowRotate 5s linear 0s infinite, borderRotate 5s linear 0s infinite;
+
+}
+
+
+
+/* Hover effect for the button */
+.request-button:hover {
+	background-color: green;
+	animation: boxShadowRotate 5s linear 0s infinite, borderRotate 5s linear 0s infinite;
+
+}
+
+/* Hover effect for the button */
+.admin-button:hover {
+	
+}
+.search-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+#game-search {
+		max-width: 100%;
+		width: auto;
+		padding: 8px 12px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		font-size: 16px;
+		background-color: #333;
+		color: #fff;
+		outline: none;
+		box-sizing: border-box;
+}
+
+
+
+#game-search::placeholder {
+		color: #999; /* Style the placeholder text color */
+}
+
+#game-search:focus {
+		border-color: #007bff; /* Change border color on focus */
+}
+
+@keyframes boxShadowRotate {
+		0% {
+				box-shadow: 0px 0px 100px rgba(250, 88, 242, 0.15);
+		}
+		25% {
+				box-shadow: 0px 0px 100px rgba(0, 153, 255, 0.15);
+		}
+		50% {
+				box-shadow: 0px 0px 100px rgba(0, 255, 0, 0.15);
+		}
+		75% {
+				box-shadow: 0px 0px 100px rgba(255, 51, 153, 0.15);
+		}
+		100% {
+				box-shadow: 0px 0px 100px rgba(250, 88, 242, 0.15);
+		}
+}
+
+@keyframes borderRotate {
+		0% {
+				border: 2px solid rgb(250, 88, 128);
+		}
+		25% {
+				border: 2px solid rgb(0, 153, 255);
+		}
+		50% {
+				border: 2px solid rgb(0, 255, 0);
+		}
+		75% {
+				border: 2px solid rgb(255, 51, 153);
+		}
+		100% {
+				border: 2px solid rgb(250, 88, 128);
+		}
+}
 body {
 	background-image:  url("https://www.icegif.com/wp-content/uploads/2022/08/icegif-1466.gif");
 	background-position: center;
@@ -537,6 +699,8 @@ hr {
 		background-position: 50%;
 		text-decoration: none;
 		color: var(--text);
+	animation: boxShadowRotate 5s linear 0s infinite, borderRotate 5s linear 0s infinite;
+
 }
 
 #categories .items .item .about {
@@ -557,8 +721,41 @@ hr {
 
 #categories .items .item .about:hover {
 		background: transparent;
-		color: transparent;
-		border-radius: 40px;
+		border-radius: 40px; /* Rainbow effect on hover */
+		animation: rainbowitemcoloronhover 15s ease infinite;
+}
+@keyframes rainbowitemcoloronhover {
+    0% { color: #FF0000; } /* Red */
+    16.666% { color: #FFA500; } /* Orange */
+    33.333% { color: #FFFF00; } /* Yellow */
+    50% { color: #008000; } /* Green */
+    66.666% { color: #0000FF; } /* Blue */
+    83.333% { color: #4B0082; } /* Indigo */
+    100% { color: #EE82EE; } /* Violet */
+}
+@keyframes glowingbn5 {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+	}
+
+	@keyframes glowingbn5 {
+		0% {
+			background-position: 0 0;
+		}
+		50% {
+			background-position: 400% 0;
+		}
+		100% {
+			background-position: 0 0;
+		}
 }
 
 #products .items .item .background {
