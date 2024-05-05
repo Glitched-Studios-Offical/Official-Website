@@ -49,17 +49,17 @@
 
 
 
-                <a class="item" href="https://github.com/Website-Crackers/eelslap" style="background-image: url(https://eelslap.com/images/eelslap_site_panorama2.jpg); background-size: cover; background-position: 50% center; text-decoration: none; border: none; outline: none; cursor: pointer;">
+                <a class="item" onclick="openPopup() href="https://github.com/Website-Crackers/eelslap" style="background-image: url(https://eelslap.com/images/eelslap_site_panorama2.jpg); background-size: cover; background-position: 50% center; text-decoration: none; border: none; outline: none; cursor: pointer;">
                     <div class="about">
                         <span class="description">eel slap</span>
                     </div>
                 </a>
-                   <a class="item" href="https://rotator.nurul-huda.sch.id/?url=https://drive.google.com/u/0/uc?id=1IR8-GQX_qj3GVScSbm_8tnpIIjiw3L4u&export=download" style="background-image: url(https://i0.wp.com/msshiandmrhe.com/wp-content/uploads/2022/04/cropped-logo-70X70.jpg?w=822&ssl=1); background-size: cover; background-position: 50% center; text-decoration: none; border: none; outline: none; cursor: pointer; color:black;">
+                   <a class="item" onclick="openPopup() href="https://rotator.nurul-huda.sch.id/?url=https://drive.google.com/u/0/uc?id=1IR8-GQX_qj3GVScSbm_8tnpIIjiw3L4u&export=download" style="background-image: url(https://i0.wp.com/msshiandmrhe.com/wp-content/uploads/2022/04/cropped-logo-70X70.jpg?w=822&ssl=1); background-size: cover; background-position: 50% center; text-decoration: none; border: none; outline: none; cursor: pointer; color:black;">
                     <div class="about">
                         <span class="description">miss she and mr he</span>
                     </div>
                 </a>
-                 <a class="item" href="https://drive.google.com/file/d/1fST6i8jqr8HUZKvPLnwmPKv6SLuzv9WJ/view?usp=sharing" style="background-color: #0E1011; background-image: url(https://cdn.gorillatagcomp.com/F77CC0F6-9576-4C6F-833B-B51460E55181.png); background-size: cover; background-position: 50% center; text-decoration: none; border: none; outline: none; cursor: pointer;">
+                 <a class="item" onclick="openPopup() href="https://drive.google.com/file/d/1fST6i8jqr8HUZKvPLnwmPKv6SLuzv9WJ/view?usp=sharing" style="background-color: #0E1011; background-image: url(https://cdn.gorillatagcomp.com/F77CC0F6-9576-4C6F-833B-B51460E55181.png); background-size: cover; background-position: 50% center; text-decoration: none; border: none; outline: none; cursor: pointer;">
                     <div class="about">
                         <span class="description">Gorilla Tag Comp Website</span>
                     </div>
@@ -67,6 +67,25 @@
                 <script type="text/javascript" src="https://www.stat-counter.org/count/ff2f"></script><br>
    <a style="color: transparent; "href='https://www.easybooking.eu/'>Hotelsoftware mit Channelmanager</a> <script type='text/javascript' src='https://www.whomania.com/ctr?id=a823c8d4b1bffbd00305d29472d1cd70a8539a2e'></script>
             </div>
+            dialog id="popup">
+  <h2>Legal/Copyright</h2>
+  <p>Note: If Any of the websites manager/owners want me to take down there website contact me in my discord with proof of ownership/manager and i will be happy to do so</p>
+  <button id="close-btn">Close</button>
+</dialog>
+
+<!-- JavaScript -->
+<script>
+  const popup = document.getElementById("popup");
+  const closeBtn = document.getElementById("close-btn");
+
+  function openPopup() {
+    popup.showModal();
+  }
+
+  closeBtn.addEventListener("click", () => {
+    popup.close();
+  });
+</script>
         </section>
 
     </main>
