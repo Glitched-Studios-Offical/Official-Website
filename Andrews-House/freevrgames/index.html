@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            color: #ccc;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .game {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .game img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .play-button {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .play-button:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Andrews Developement</h1>
+    </header>
+    <nav>
+        <a href="/AndrewsHouse/House/Main/index.html">Home</a>
+        <a href="/AndrewsHouse/House/MoreAboutUs/AboutUs.html"">About</a>
+        <a href="#">Services</a>
+        <a href="https://discord.gg/9UeuDYFwNq">Discord 1</a>
+        <a href="https://discord.gg/K5tpDsKujM">Discord 2</a>
+    </nav>
+    <section>
+        <h2>Free Games</h2>
+        <!-- Search bar -->
+        <input type="text" id="searchInput" placeholder="Search for games..." oninput="searchGame()">
+        <div class="game" id="game1">
+            <img src="https://th.bing.com/th/id/OIP.Yn-8yDxw1FcPN2IErFD3uQHaEK?w=309&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="LawnMowing Simulator">
+            <h3>LawnMowing Simulator</h3>
+            <p>You Mow With A LawnMower</p>
+            <p>Download By Clicking The Button! <a href="https://drive.google.com/file/d/1Pi3TFGcNpG1C2AqwJSCt4Z49OyvYRIye/view?usp=sharing" class="play-button">Download!</a>.</p>
+        </div>
+        <div class="game" id="game2">
+            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2009460/capsule_616x353.jpg?t=1693891720" alt="War of Wizards">
+            <h3>War Of Wizards</h3>
+            <p>You fight Other players as a wizard with spells if you lag rejoin the game</p>
+            <p>Download By Clicking The Button! <a href="https://drive.google.com/file/d/1no2wjaIRegDGwCu0U4VtpL15tNdkGRrp/view?usp=sharing" class="play-button">Download!</a>.</p>
+        </div>
+        <!-- Copy from div Class and just make it yk -->
+    </section>
+    <footer>
+        <p>&copy; my site no copyright</p>
+    </footer>
+
+    <script>
+        function searchGame() {
+            var searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            var games = document.querySelectorAll('.game');
+
+            var found = false;
+
+            games.forEach(function(game) {
+                var gameName = game.querySelector('h3').textContent.toLowerCase();
+                if (gameName.includes(searchTerm)) {
+                    game.style.display = 'block';
+                    found = true;
+                } else {
+                    game.style.display = 'none';
+                }
+            });
+
+            if (!found) {
+                alert("Uh oh! Looks like you don't see any games here. You probably messed up your writing or it's not on here. Go to the Discord and make a request!");
+            }
+        }
+    </script>
+</body>
+</html>
