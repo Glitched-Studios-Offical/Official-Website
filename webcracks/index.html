@@ -49,23 +49,23 @@
 
 
 
-                <a class="item" href="https://github.com/Website-Crackers/eelslap" style="background-image: url(https://eelslap.com/images/eelslap_site_panorama2.jpg);  background-size: cover; background-position: 50% center; text-decoration: none; border: none; outline: none; cursor: pointer;">
+                <a class="item" target="_blank"  href="https://github.com/Website-Crackers/eelslap" onclick="openPopup() style="background-image: url(https://eelslap.com/images/eelslap_site_panorama2.jpg);  background-size: cover; background-position: 50% center; text-decoration: none; border: none; outline: none; cursor: pointer;">
                     <div class="about">
                         <span class="description">eel slap</span>
                     </div>
                 </a>
-                   <a class="item" href="https://rotator.nurul-huda.sch.id/?url=https://drive.google.com/u/0/uc?id=1IR8-GQX_qj3GVScSbm_8tnpIIjiw3L4u&export=download"  style="background-image: url(https://i0.wp.com/msshiandmrhe.com/wp-content/uploads/2022/04/cropped-logo-70X70.jpg?w=822&ssl=1); background-size: cover; background-position: 50% center; text-decoration: none; border: none; outline: none; cursor: pointer; color:black;">
+                   <a class="item" target="_blank" href="https://drive.google.com/file/d/1IR8-GQX_qj3GVScSbm_8tnpIIjiw3L4u/view?usp=sharing" onclick="openPopup()  style="background-image: url(https://i0.wp.com/msshiandmrhe.com/wp-content/uploads/2022/04/cropped-logo-70X70.jpg?w=822&ssl=1); background-size: cover; background-position: 50% center; text-decoration: none; border: none; outline: none; cursor: pointer; color:black;">
                     <div class="about">
                         <span class="description">miss she and mr he</span>
                     </div>
                 </a>
-                 <a class="item" href="https://drive.google.com/file/d/1fST6i8jqr8HUZKvPLnwmPKv6SLuzv9WJ/view?usp=sharing"  style="background-color: #0E1011; background-image: url(https://cdn.gorillatagcomp.com/F77CC0F6-9576-4C6F-833B-B51460E55181.png); background-size: cover; background-position: 50% center; text-decoration: none; border: none; outline: none; cursor: pointer;">
+                 <a class="item" target="_blank" href="https://drive.google.com/file/d/1fST6i8jqr8HUZKvPLnwmPKv6SLuzv9WJ/view?usp=sharing" onclick="openPopup() style="background-color: #0E1011; background-image: url(https://cdn.gorillatagcomp.com/F77CC0F6-9576-4C6F-833B-B51460E55181.png); background-size: cover; background-position: 50% center; text-decoration: none; border: none; outline: none; cursor: pointer;">
                     <div class="about">
                         <span class="description">Gorilla Tag Comp Website</span>
                     </div>
                 </a>
 <!-- HTML -->
-<a href="#" onclick="openPopup()">Legal/Copyright</a>
+<a href="#" ">Legal/Copyright</a>
 
 <!-- The popup dialog -->
 <div id="popup" class="popup-dialog">
@@ -101,11 +101,22 @@
 
   .popup-title {
     margin-top: 0;
+      animation: rainbowitemcoloronhover 15s ease infinite;
   }
 
   .popup-text {
     margin-bottom: 10px;
-  }
+  	animation: rainbowitemcoloronhover 15s ease infinite;
+}
+@keyframes rainbowitemcoloronhover {
+    0% { color: #FF0000; } /* Red */
+    16.666% { color: #FFA500; } /* Orange */
+    33.333% { color: #FFFF00; } /* Yellow */
+    50% { color: #008000; } /* Green */
+    66.666% { color: #0000FF; } /* Blue */
+    83.333% { color: #4B0082; } /* Indigo */
+    100% { color: #EE82EE; } /* Violet */
+}
 
   .popup-close {
     padding: 5px 10px;
