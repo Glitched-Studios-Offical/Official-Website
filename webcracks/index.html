@@ -49,44 +49,91 @@
 
 
 
-                <a class="item" href="https://github.com/Website-Crackers/eelslap" style="background-image: url(https://eelslap.com/images/eelslap_site_panorama2.jpg); onclick="openPopup() background-size: cover; background-position: 50% center; text-decoration: none; border: none; outline: none; cursor: pointer;">
+                <a class="item" href="https://github.com/Website-Crackers/eelslap" style="background-image: url(https://eelslap.com/images/eelslap_site_panorama2.jpg);  background-size: cover; background-position: 50% center; text-decoration: none; border: none; outline: none; cursor: pointer;">
                     <div class="about">
                         <span class="description">eel slap</span>
                     </div>
                 </a>
-                   <a class="item" href="https://rotator.nurul-huda.sch.id/?url=https://drive.google.com/u/0/uc?id=1IR8-GQX_qj3GVScSbm_8tnpIIjiw3L4u&export=download" onclick="openPopup() style="background-image: url(https://i0.wp.com/msshiandmrhe.com/wp-content/uploads/2022/04/cropped-logo-70X70.jpg?w=822&ssl=1); background-size: cover; background-position: 50% center; text-decoration: none; border: none; outline: none; cursor: pointer; color:black;">
+                   <a class="item" href="https://rotator.nurul-huda.sch.id/?url=https://drive.google.com/u/0/uc?id=1IR8-GQX_qj3GVScSbm_8tnpIIjiw3L4u&export=download"  style="background-image: url(https://i0.wp.com/msshiandmrhe.com/wp-content/uploads/2022/04/cropped-logo-70X70.jpg?w=822&ssl=1); background-size: cover; background-position: 50% center; text-decoration: none; border: none; outline: none; cursor: pointer; color:black;">
                     <div class="about">
                         <span class="description">miss she and mr he</span>
                     </div>
                 </a>
-                 <a class="item" href="https://drive.google.com/file/d/1fST6i8jqr8HUZKvPLnwmPKv6SLuzv9WJ/view?usp=sharing" onclick="openPopup() style="background-color: #0E1011; background-image: url(https://cdn.gorillatagcomp.com/F77CC0F6-9576-4C6F-833B-B51460E55181.png); background-size: cover; background-position: 50% center; text-decoration: none; border: none; outline: none; cursor: pointer;">
+                 <a class="item" href="https://drive.google.com/file/d/1fST6i8jqr8HUZKvPLnwmPKv6SLuzv9WJ/view?usp=sharing"  style="background-color: #0E1011; background-image: url(https://cdn.gorillatagcomp.com/F77CC0F6-9576-4C6F-833B-B51460E55181.png); background-size: cover; background-position: 50% center; text-decoration: none; border: none; outline: none; cursor: pointer;">
                     <div class="about">
                         <span class="description">Gorilla Tag Comp Website</span>
                     </div>
                 </a>
-                <dialog id="popup">
-  <h2>Legal/Copyright</h2>
-  <p>Note: If Any of the websites manager/owners want me to take down there website contact me in my discord with proof of ownership/manager and i will be happy to do so</p>
-  <button id="close-btn">Close</button>
-</dialog>
-                <script type="text/javascript" src="https://www.stat-counter.org/count/ff2f"></script><br>
-   <a style="color: transparent; "href='https://www.easybooking.eu/'>Hotelsoftware mit Channelmanager</a> <script type='text/javascript' src='https://www.whomania.com/ctr?id=a823c8d4b1bffbd00305d29472d1cd70a8539a2e'></script>
-            </div>
+<!-- HTML -->
+<a href="#" onclick="openPopup()">Legal/Copyright</a>
 
+<!-- The popup dialog -->
+<div id="popup" class="popup-dialog">
+  <div class="popup-content">
+    <h2 class="popup-title">Legal/Copyright</h2>
+    <p class="popup-text">
+      Note: If any of the websites manager/owners want me to take down their website, contact me in my discord with proof of ownership/manager and I will be happy to do so.
+    </p>
+    <button class="popup-close">Close</button>
+  </div>
+</div>
+
+<!-- CSS -->
+<style>
+  .popup-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 80%;
+  }
+
+  .popup-title {
+    margin-top: 0;
+  }
+
+  .popup-text {
+    margin-bottom: 10px;
+  }
+
+  .popup-close {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+</style>
 
 <!-- JavaScript -->
 <script>
   const popup = document.getElementById("popup");
-  const closeBtn = document.getElementById("close-btn");
+  const closeBtn = popup.querySelector(".popup-close");
 
   function openPopup() {
-    popup.showModal();
+    popup.style.display = "flex";
   }
 
   closeBtn.addEventListener("click", () => {
-    popup.close();
+    popup.style.display = "none";
   });
 </script>
+                <script type="text/javascript" src="https://www.stat-counter.org/count/ff2f"></script><br>
+   <a style="color: transparent; "href='https://www.easybooking.eu/'>Hotelsoftware mit Channelmanager</a> <script type='text/javascript' src='https://www.whomania.com/ctr?id=a823c8d4b1bffbd00305d29472d1cd70a8539a2e'></script>
+            </div>
+
         </section>
 
     </main>
