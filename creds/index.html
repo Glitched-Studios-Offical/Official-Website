@@ -63,4 +63,52 @@
 	</section>
 
 	</main>
+<!-- CSS -->
+	<style>
+	.popup-dialog {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+	justify-content: center;
+	align-items: center;
+	}
 
+	.popup-content {
+	background-color: white;
+	padding: 20px;
+	border-radius: 5px;
+	max-width: 80%;
+	}
+
+	.popup-title {
+	margin-top: 0;
+	animation: rainbowitemcoloronhover 15s ease infinite;
+	}
+
+	.popup-text {
+	margin-bottom: 10px;
+	animation: rainbowitemcoloronhover 15s ease infinite;
+	}
+	@keyframes rainbowitemcoloronhover {
+	0% { color: #FF0000; } /* Red */
+	16.666% { color: #FFA500; } /* Orange */
+	33.333% { color: #FFFF00; } /* Yellow */
+	50% { color: #008000; } /* Green */
+	66.666% { color: #0000FF; } /* Blue */
+	83.333% { color: #4B0082; } /* Indigo */
+	100% { color: #EE82EE; } /* Violet */
+	}
+
+	.popup-close {
+	padding: 5px 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #4CAF50;
+	color: white;
+	cursor: pointer;
+	}
+	</style>
