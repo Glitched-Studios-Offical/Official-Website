@@ -1,3 +1,5 @@
+<link rel="html" href="/index.html" />
+
 greeting = 'Your In Free VR Games'
 print(greeting)
 
