@@ -17,7 +17,7 @@ k.loadSprite("spritesheet", "./spritesheet.png", {
   },
 });
 
-k.loadSprite("map", "./map.png");
+k.loadSprite("map", "Andrews-House/map.png");
 
 // sets up background color
 k.setBackground(k.Color.fromHex("#311047"));
@@ -25,7 +25,7 @@ k.setBackground(k.Color.fromHex("#311047"));
 // defines a scene
 k.scene("main", async () => {
   // logic for the scene
-  const mapData = await (await fetch("./map.json")).json();
+  const mapData = await (await fetch("Andrews-House/map.json")).json();
   const layers = mapData.layers;
   // create map and add it to canvas
   const map = k.add([
