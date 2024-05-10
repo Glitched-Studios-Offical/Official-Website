@@ -1,4 +1,4 @@
-import { k } from "./kaboomCtx";
+import { k } from "Andrews-House/kaboomCtx";
 import { scaleFactor } from "./constants";
 import { displayDialog, setCamScale } from "./utils";
 import { dialogueData } from "./constants";
