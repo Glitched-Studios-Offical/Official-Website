@@ -70,6 +70,65 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
+  <section id="categories">
+	</div>
+            <div class="button-container">
+                <a href="https://discord.com/channels/1192296192130953298/1232452011799351367"
+                    class="request-button">Request</a>
+
+                <!-- Add Discord invite link here -->
+                <a href="https://discord.gg/twAx8rWYTt" target="_blank" class="discord-button">
+                    Discord<i class="fa-brands fa-discord"></i>
+                </a>
+            </div>
+            <br>
+            <hr>
+            <h6 style="color: transparent;">eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</h6>
+            <div class="game-links">
+
+                <div class="search-container" style="align-content: center;">
+                    <input type="text" id="searchBar" onkeyup="searchGames()" placeholder="Type A Game Name Here">
+                </div>
+            </div>
+            <div class="items">
+                <!-- code starts here -->
+                <style>
+                    a {
+                        background-size: cover;
+                        background-position: 50% center;
+                        text-decoration: none;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                    }
+                </style>
+                <script>
+                    function searchGames() {
+                        let input = document.getElementById('searchBar').value.toLowerCase();
+                        let items = document.querySelectorAll('.item');
+
+                        items.forEach(item => {
+                            let description = item.querySelector('.description').textContent.toLowerCase();
+                            if (description.includes(input)) {
+                                item.style.display = 'block';
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        });
+                    }
+                </script>
+                 <a class="item" href="https://www.roblox.com/users/4797138346/profile"
+                    style="background-image: url(https://www.bing.com/th?id=OIP.5Xmfj_DygsycNRe3vlIaXgHaEK&w=200&h=106&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2); ">
+                    <div class="about">
+                        <span class="description">Roblox</span>
+                    </div>
+                </a>
+
+
+
+
+            </div>
+        </section>
    
 </body>
 </html> 
