@@ -60,12 +60,16 @@
 
 a:hover, a:active {
   background-color: pink;
-
-    body {
+    
+    </style>
+</head>
+<body>
+    <style>
+body {
   font-family: "Lato", sans-serif;
 }
-    
-    .sidenav {
+
+.sidenav {
   height: 100%;
   width: 0;
   position: fixed;
@@ -103,9 +107,30 @@ a:hover, a:active {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-    </style>
-</head>
-<body>
+
+</style>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Script Help</a>
+  <a href="#">Nothing</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<h2>Gaming</h2>
+<p>Gaming Is New So Some Stuff May NOT WORK Please Understand</p>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "700px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
     <header>
         <h1>Welcome To Andrews Development</h1>
     </header>
@@ -120,25 +145,6 @@ a:hover, a:active {
         <a href="https://discord.gg/9UeuDYFwNq">Discord 1</a>
         <a href="https://discord.gg/K5tpDsKujM">Discord 2</a>
     </nav>
-    
-<div id="mySidenav" class="sidenav">
-     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-     <a href="#">Script Help</a>
-     <a href="#">Nothing</a>
-     <a href="#">Clients</a>
-     <a href="#">Contact</a>
-</div>
-
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-    <script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "700px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
     
     <section>
         <h2>About Us</h2>
