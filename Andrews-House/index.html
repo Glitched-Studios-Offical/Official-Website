@@ -49,7 +49,7 @@
             bottom: 0;
             width: 100%;
         }
-        a:link, a:visited {
+        a:inline-block, a:link, a:visited {
   background-color: #f44336;
   color: white;
   padding: 14px 25px;
@@ -100,7 +100,7 @@ a:hover, a:active {
   text-decoration: none;
   font-size: 25px;
   color: #818181;
-  display: button;
+  display: block;
   transition: 0.3s;
 }
 
@@ -121,6 +121,13 @@ a:hover, a:active {
   .sidenav a {font-size: 18px;}
 }
 
+a:block, a:link, a:visited a:closebtn {
+  background-color: #818181;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 </style>
 
 <div id="mySidenav" class="sidenav">
