@@ -1,94 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrews House</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #444;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        nav a:hover {
-            color: #ccc;
-        }
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-            footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 5px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        a:link, a:visited {
-  background-color: #f44336;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
 }
 
-a:hover, a:active {
-  background-color: pink;
-    </style>
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
 </head>
 <body>
-    <header>
-        <h1>Welcome To Andrews Development</h1>
-    </header>
-    <nav>
-        <a href="https://glitched-studios.vercel.app/">Glitched Studios</a>
-        <a href="/Andrews-House/index.html">Glitched Studios</a>
-        <a href="/Andrews-House/about us/">About</a>
-        <a href="/Andrews-House/freevrgames/">FreeVRGames</a>
-        <a href="/Andrews-House/OculusModding.html">Oculus Modding Stuff</a>
-        <a href="/Andrews-House/ComingSoonPage.html">Gaming</a>
-        <a href="/Andrews-House/Unblocked Stuff.html">Unblocked Stuff</a>
-        <a href="https://discord.gg/9UeuDYFwNq">Discord 1</a>
-        <a href="https://discord.gg/K5tpDsKujM">Discord 2</a>
-    </nav>
-    <section>
-        <h2>About Us</h2>
-        <p>Andrew Has Created The Site And Has Invited The Following, SnakeVR, Zealot, Bagle, Glitched Dah Kitty Cat, Boibob69</p>
-    </section>
-    <section>
-        <h2>Services</h2>
-        <ul>
-            <li>Modding</li>
-            <li>Coding And Oculus Stuff</li>
-            <li>Development</li>
-            <li>Tutorials</li>
-        </ul>
-    </section>
-    <footer>
-        <p>&copy; my site no copyright 2024 house HHHEHEHEH</p>
-    </footer>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<h2>In Here You Get To Test Upcoming Updates Before They Come OUT!!! Everything Should Work In Here</h2>
+<p>Click The Navigation Bar with The 3 Lines Its a New Menu For when we run out of space</p>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "700px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
 </body>
-</html>
+</html> 
